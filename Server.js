@@ -19,10 +19,11 @@ const app = express();
 
 
 app.use(cors({
-  origin: '*', // Allow all origins (use only for testing)
+  origin: ['http://localhost:3000', 'https://coursebundlearr-5nkdpaajh-md-tauseefs-projects.vercel.app'], // Add your Vercel URL here
   methods: 'GET, POST, PUT, DELETE',
   credentials: true,
 }));
+
 
 
 app.use(express.json());
